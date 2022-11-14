@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<form method="post">
+    Usuario:
+    <input type="text" name="user" class="form-control"/>
+    <br />
+    Contraseña:
+    <input type="password" name="pass" class="form-control"/>
+    <br />
+    <input type="submit" value="Entrar" class="btn btn-primary"/>
+</form>
+<p class="alert-danger">@Model.msg</p>
